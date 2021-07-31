@@ -1,28 +1,23 @@
 using System;
+using System.Collections.Generic;
 
 namespace Terminal.Drawable
 {
     public class PlayerDrawable : IDrawable
     {
+        private static List<ConsoleColor> _colorsList = new List<ConsoleColor>()
+        {
+            ConsoleColor.DarkRed,
+            ConsoleColor.DarkBlue,
+            ConsoleColor.DarkYellow,
+            ConsoleColor.DarkMagenta
+        };
+        
         private ConsoleColor _playerColor;
 
         public PlayerDrawable(int playerIndex)
         {
-            switch(playerIndex)
-            {
-                case 0:
-                    _playerColor = ConsoleColor.DarkRed;
-                break;
-                case 1:
-                    _playerColor = ConsoleColor.DarkBlue;
-                break;
-                case 2:
-                    _playerColor = ConsoleColor.DarkYellow;
-                break;
-                case 3:
-                    _playerColor = ConsoleColor.DarkMagenta;
-                break;
-            }
+            _playerColor = _colorsList[playerIndex];
         }
 
         public void Draw()

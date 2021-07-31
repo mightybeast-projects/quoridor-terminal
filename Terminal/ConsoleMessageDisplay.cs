@@ -1,6 +1,5 @@
 using System;
 using Quoridor.Core.GameLogic;
-using Quoridor.Core.PlayerLogic;
 using Terminal.Drawable;
 
 namespace Terminal

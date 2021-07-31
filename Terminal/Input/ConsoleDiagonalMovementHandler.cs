@@ -4,7 +4,8 @@ namespace Terminal.Input
 {
     public class ConsoleDiagonalMovementHandler : InputHandler
     {
-        public ConsoleDiagonalMovementHandler(ConsoleMessageDisplay messageDisplay, Game game) : base(game)
+        public ConsoleDiagonalMovementHandler(ConsoleMessageDisplay messageDisplay, Game game) 
+            : base(game)
         {
             PrintMenu = messageDisplay.PrintDiagonalMovementMenu;
             InitializeCommands();
