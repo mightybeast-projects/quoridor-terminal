@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
     <Reference Include="Quoridor">
       <HintPath>../Library/Quoridor.dll</HintPath>
     </Reference>
